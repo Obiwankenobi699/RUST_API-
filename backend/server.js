@@ -6,6 +6,8 @@ import todoRoutes from './routes/todo.route.js'
 dotenv.config()
 
 const app = express();
+
+app.use(express.json())
 app.use('/api/todos',todoRoutes)
 
 
